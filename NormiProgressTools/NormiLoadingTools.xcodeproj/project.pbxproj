@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB6B9B0A1D4B33CB003AA8A1 /* NormiProgressTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NormiProgressTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6B9B0A1D4B33CB003AA8A1 /* NormiLoadingTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NormiLoadingTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6B9B0E1D4B33CB003AA8A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB6B9B101D4B33CB003AA8A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB6B9B111D4B33CB003AA8A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		FB6B9B0B1D4B33CB003AA8A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB6B9B0A1D4B33CB003AA8A1 /* NormiProgressTools.app */,
+				FB6B9B0A1D4B33CB003AA8A1 /* NormiLoadingTools.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB6B9B091D4B33CB003AA8A1 /* NormiProgressTools */ = {
+		FB6B9B091D4B33CB003AA8A1 /* NormiLoadingTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB6B9B211D4B33CB003AA8A1 /* Build configuration list for PBXNativeTarget "NormiProgressTools" */;
+			buildConfigurationList = FB6B9B211D4B33CB003AA8A1 /* Build configuration list for PBXNativeTarget "NormiLoadingTools" */;
 			buildPhases = (
 				FB6B9B061D4B33CB003AA8A1 /* Sources */,
 				FB6B9B071D4B33CB003AA8A1 /* Frameworks */,
@@ -104,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = NormiProgressTools;
+			name = NormiLoadingTools;
 			productName = NormiProgressTools;
-			productReference = FB6B9B0A1D4B33CB003AA8A1 /* NormiProgressTools.app */;
+			productReference = FB6B9B0A1D4B33CB003AA8A1 /* NormiLoadingTools.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB6B9B051D4B33CB003AA8A1 /* Build configuration list for PBXProject "NormiProgressTools" */;
+			buildConfigurationList = FB6B9B051D4B33CB003AA8A1 /* Build configuration list for PBXProject "NormiLoadingTools" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -136,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB6B9B091D4B33CB003AA8A1 /* NormiProgressTools */,
+				FB6B9B091D4B33CB003AA8A1 /* NormiLoadingTools */,
 			);
 		};
 /* End PBXProject section */
@@ -277,8 +277,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NormiProgressTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.NormiProgressTools";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.NormiLoadingTools";
+				PRODUCT_NAME = NormiLoadingTools;
 			};
 			name = Debug;
 		};
@@ -288,15 +288,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NormiProgressTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.NormiProgressTools";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.NormiLoadingTools";
+				PRODUCT_NAME = NormiLoadingTools;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB6B9B051D4B33CB003AA8A1 /* Build configuration list for PBXProject "NormiProgressTools" */ = {
+		FB6B9B051D4B33CB003AA8A1 /* Build configuration list for PBXProject "NormiLoadingTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB6B9B1F1D4B33CB003AA8A1 /* Debug */,
@@ -305,13 +305,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB6B9B211D4B33CB003AA8A1 /* Build configuration list for PBXNativeTarget "NormiProgressTools" */ = {
+		FB6B9B211D4B33CB003AA8A1 /* Build configuration list for PBXNativeTarget "NormiLoadingTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB6B9B221D4B33CB003AA8A1 /* Debug */,
 				FB6B9B231D4B33CB003AA8A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

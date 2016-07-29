@@ -3,7 +3,6 @@
 //  NormiLoading
 //
 //  Created by Coody on 2016/6/13.
-//  Copyright © 2016年 Coody. All rights reserved.
 //
 
 #import "NormiLoadingTool.h"
