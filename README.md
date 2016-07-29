@@ -6,7 +6,7 @@ NormiLoadingTool is a class that you can easily change your custom loading view 
 
 # How To Use
 
-1.Add keyWindow in method `application:didFinishLaunchingWithOption:` in ` AppDelegate.m`
+## Add keyWindow in method `application:didFinishLaunchingWithOption:` in ` AppDelegate.m`
 
 example:
 ```
@@ -21,7 +21,7 @@ example:
 }
 ```
 
-2.Create your custom loading view, and inherit `NormiLoadingTool_View` , follow protocol `NormiLoadingTool_Policy`.
+## Create your custom loading view, and inherit `NormiLoadingTool_View` , follow protocol `NormiLoadingTool_Policy`.
 
 example:
 ```
@@ -31,7 +31,7 @@ example:
 @end
 ```
 
-3.Implement `init` and `runAction` , `stopAction` methods.
+## Implement `init` and `runAction` , `stopAction` methods.
 
 example:
 ```
@@ -58,7 +58,7 @@ example:
 }
 ```
 
-4.Initial loading view objects and use it
+## Initial loading view objects and use it
 
 Initial example:
 ```
