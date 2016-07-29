@@ -6,9 +6,8 @@ NormiLoadingTool is a class that you can easily change your custom loading view 
 
 # How To Use
 
-* Add keyWindow in method `application:didFinishLaunchingWithOption:` in ` AppDelegate.m`
+Add keyWindow in method `application:didFinishLaunchingWithOption:` in ` AppDelegate.m`
 
-example:
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -21,9 +20,8 @@ example:
 }
 ```
 
-* Create your custom loading view, and inherit `NormiLoadingTool_View` , follow protocol `NormiLoadingTool_Policy`.
+Create your custom loading view, and inherit `NormiLoadingTool_View` , follow protocol `NormiLoadingTool_Policy`.
 
-example:
 ```
 #import "NormiLoadingTool.h"
 
@@ -31,7 +29,7 @@ example:
 @end
 ```
 
-* Implement `init` and `runAction` , `stopAction` methods.
+Implement `init` and `runAction` , `stopAction` methods.
 
 example:
 ```
@@ -58,15 +56,15 @@ example:
 }
 ```
 
-* Initial loading view objects and use it
+Initial loading view objects and use it
 
-Initial example:
+Initial:
 ```
 // NormalLoadingView is your custom loading view class.
 [[NormiLoadingTool sharedInstance] setLoadingViewClass:[NormalLoadingView class]];
 ```
 
-Using loading view example:
+Using loading view:
 ```
 // show loading
 [[NormiLoadingTool sharedInstance] showloadingWithText:@"Loading, please wait..."];
