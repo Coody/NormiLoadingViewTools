@@ -62,6 +62,10 @@ Initial:
 ```
 // NormalLoadingView is your custom loading view class.
 [[NormiLoadingTool sharedInstance] setLoadingViewClass:[NormalLoadingView class]];
+
+// Of course you can create more your custom loading view.
+// change another loading view style, it will manage loading view automatic.
+[[NormiLoadingTool sharedInstance] setLoadingViewClass:[OoxxLoadingView class]];
 ```
 
 Using loading view:
