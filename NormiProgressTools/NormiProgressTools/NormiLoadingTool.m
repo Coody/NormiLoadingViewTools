@@ -187,7 +187,9 @@
 
 -(void)continueLoading{
     NormiLoadingTool_View *loadingView = [_loadingViewDic objectForKey:_recentLoadingViewKey];
-    [loadingView runAction];
+    if( self.isLoading ){
+        [loadingView runAction];
+    }
 }
 
 -(void)setTextFont:(nonnull UIFont *)tempFont{
