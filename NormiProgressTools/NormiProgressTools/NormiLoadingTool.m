@@ -105,11 +105,12 @@
     
     BOOL isNeedCreateNew = NO;
     NormiLoadingTool_View *loadingView;
+    NSString *checkKey = NSStringFromClass(LoadingViewClass);
     if ( [_recentLoadingViewKey isEqualToString:@""] || _recentLoadingViewKey == nil ) {
         isNeedCreateNew = YES;
     }
     else{
-        if ( [_recentLoadingViewKey isEqualToString:NSStringFromClass(LoadingViewClass)] ) {
+        if ( [_recentLoadingViewKey isEqualToString:checkKey] ) {
             // 不用再取一次
         }
         else{
@@ -117,8 +118,9 @@
             [self closeloading];
             
             // 檢查字典是否已經存在此 Loading view ，有的話就更換 key 就好，沒有的話就產生新的
-            NSString *checkKey = [_loadingViewDic objectForKey:NSStringFromClass(LoadingViewClass)];
-            if ( checkKey == nil ) {
+            
+            loadingView = [_loadingViewDic objectForKey:checkKey];
+            if ( loadingView == nil ) {
                 isNeedCreateNew = YES;
             }
             else{
@@ -129,7 +131,7 @@
     
     if ( isNeedCreateNew == YES ) {
         // 建立新的 Loading view
-        [_recentLoadingViewKey setString:NSStringFromClass(LoadingViewClass)];
+        [_recentLoadingViewKey setString:checkKey];
         loadingView = [[LoadingViewClass alloc] init];
         loadingView.center = _grayAlphaView.center;
         [_loadingViewDic setObject:loadingView forKey:_recentLoadingViewKey];
