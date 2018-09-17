@@ -47,9 +47,12 @@
  */
 -(void)setLoadingViewPosition:(CGPoint)tempPosition;
 
+-(void)showloadingWithText:(nullable NSString *)tempText withClass:(nonnull Class <NormiLoadingTool_Policy , App_Alloc_Policy>)LoadingViewClass;
 -(void)showloadingWithText:(nullable NSString *)tempText;
 
 -(void)closeloading;
+
+-(NSString *)recentLoadingViewKey;
 
 #pragma mark : 設定 Label 的屬性
 -(void)setTextFont:(nonnull UIFont *)tempFont;

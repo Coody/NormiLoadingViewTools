@@ -153,6 +153,12 @@
     [loadingView setFrame:CGRectMake(tempPosition.x, tempPosition.y, CGRectGetWidth(loadingView.frame), CGRectGetHeight(loadingView.frame))];
 }
 
+-(void)showloadingWithText:(nullable NSString *)tempText withClass:(nonnull Class <NormiLoadingTool_Policy , App_Alloc_Policy>)LoadingViewClass{
+    [self setLoadingViewClass:LoadingViewClass];
+    
+    [self showloadingWithText:tempText];
+}
+
 -(void)showloadingWithText:(nullable NSString *)tempText{
     
     _isLoading = YES;
@@ -173,18 +179,24 @@
 }
 
 -(void)closeloading{
-    NormiLoadingTool_View *loadingView = [_loadingViewDic objectForKey:_recentLoadingViewKey];
-    [loadingView stopAction];
-    __weak __typeof(self)weakSelf = self;
-    [UIView animateWithDuration:0.1f animations:^{
-        __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [strongSelf.grayAlphaView setAlpha:0.0f];
-    } completion:^(BOOL finished) {
-        __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [loadingView removeFromSuperview];
-        [strongSelf.grayAlphaView removeFromSuperview];
-        strongSelf.isLoading = NO;
-    }];
+    if( self.isLoading == YES ){
+        NormiLoadingTool_View *loadingView = [_loadingViewDic objectForKey:_recentLoadingViewKey];
+        [loadingView stopAction];
+        __weak __typeof(self)weakSelf = self;
+        [UIView animateWithDuration:0.1f animations:^{
+            __strong __typeof(weakSelf)strongSelf = weakSelf;
+            [strongSelf.grayAlphaView setAlpha:0.0f];
+        } completion:^(BOOL finished) {
+            __strong __typeof(weakSelf)strongSelf = weakSelf;
+            [loadingView removeFromSuperview];
+            [strongSelf.grayAlphaView removeFromSuperview];
+            strongSelf.isLoading = NO;
+        }];
+    }
+}
+
+-(NSString *)recentLoadingViewKey{
+    return _recentLoadingViewKey;
 }
 
 -(void)continueLoading{
