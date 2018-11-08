@@ -34,6 +34,7 @@
 @interface NormiLoadingTool : NSObject
 
 @property (nonnull , nonatomic , strong) UIView *grayAlphaView;
+@property (nonatomic , readonly) BOOL isLoading;
 
 +(nonnull instancetype)sharedInstance;
 

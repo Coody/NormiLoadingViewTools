@@ -79,6 +79,7 @@
         [_textLabel setFont:D_NormiLoadingTool_TextFont];
         [_textLabel setTextColor:D_NormiLoadingTool_TextColor];
         [_textLabel setText:@""];
+        _textLabel.numberOfLines = 0;
         
         // 加入監聽
         [[NSNotificationCenter defaultCenter] addObserver:self 
